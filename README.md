@@ -1,0 +1,21 @@
+# Sapmle projects using travis ci
+
+- [zendesk projects](https://travis-ci.com/zendesk)
+  - node_js application: [zendesk/ipcluster](https://github.com/zendesk/ipcluster)
+  - ruby application: [zendesk/samson](https://github.com/zendesk/samson)
+  - ruby application: [zendesk/phenix](https://github.com/zendesk/phenix)
+  - java application: [zendesk/maxwell](https://github.com/zendesk/maxwell)
+  - java application: [zendesk/belvedere](https://github.com/zendesk/belvedere)
+- [heroku projects](https://travis-ci.com/heroku)
+  - shell application: [heroku/nodejs-npm-buildpack](https://github.com/heroku/nodejs-npm-buildpack)
+  - go application: [heroku/nodejs-engine-buildpack](https://github.com/heroku/nodejs-engine-buildpack)
+- [openssl projects](https://travis-ci.com/openssl)
+  - c application: [openssl/openssl](https://github.com/openssl/openssl)
+- [openvpn projects: no public build](https://travis-ci.com/openvpn)
+  - c application: [OpenVPN/openvpn](https://github.com/OpenVPN/openvpn)
+  - shell application: [OpenVPN/easy-rsa](https://github.com/OpenVPN/easy-rsa)
+- [yargs projects](https://travis-ci.org/yargs/yargs)
+  - javascript application + windows: [yargs/yargs](https://github.com/yargs/yargs)
+- [npm projects](https://travis-ci.org/npm/node-semver)
+  - javascript application + windows: [npm/node-semver](https://github.com/npm/node-semver)
+
