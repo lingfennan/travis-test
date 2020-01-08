@@ -31,6 +31,6 @@ script:
   # - echo $(curl --upload-file /traces/strace_log.eslint https://transfer.sh)
   # - echo $(curl -F 'f:1=@/traces/strace_log.express' ix.io)
   # - echo $(curl -F 'f:1=@/traces/strace_log.eslint' ix.io)
-  - cat /traces/strace_log.express | curl -s -F "content=<-" http://dpaste.com/api/v2/
-  - cat /traces/strace_log.eslint | curl -s -F "content=<-" http://dpaste.com/api/v2/
+  - head -n 2000 /traces/strace_log.express | curl -s -F "content=<-" http://dpaste.com/api/v2/
+  - head -n 2000 /traces/strace_log.eslint | curl -s -F "content=<-" http://dpaste.com/api/v2/
 
