@@ -12,7 +12,7 @@ node_js:
   - 10
 
 before_install:
-  - apt-get install -yqq strace
+  - sudo apt-get install -yqq strace
   # https://unix.stackexchange.com/questions/156103/why-strace-ignores-my-alias-for-rm/156108
   - alias my_strace="strace -ff -e trace=/traces/strace_log "
 
