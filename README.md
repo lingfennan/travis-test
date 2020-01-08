@@ -18,4 +18,8 @@
   - javascript application + windows: [yargs/yargs](https://github.com/yargs/yargs)
 - [npm projects](https://travis-ci.org/npm/node-semver)
   - javascript application + windows: [npm/node-semver](https://github.com/npm/node-semver)
+- [use docker in travis](https://docs.travis-ci.com/user/docker/)
+  - [docker-pg-backup](https://github.com/kartoza/docker-pg-backup/blob/master/.travis.yml)
+  - [logplex](https://github.com/heroku/logplex/blob/master/.travis.yml)
+  - [Sending Kubernetes & Docker events to Elasticsearch and Splunk using Sysdig](https://sysdig.com/blog/kubernetes-docker-elasticsearch-splunk/)
 
