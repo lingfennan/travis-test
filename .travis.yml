@@ -11,7 +11,7 @@ node_js:
 
 script:
   - docker pull sysdig/sysdig:0.26.4
-  - docker run -v /var/run/docker.sock:/host/var/run/docker.sock -v /dev:/host/dev -v /proc:/host/proc:ro -v /boot:/host/boot:ro -v /lib/modules:/host/lib/modules:ro -v /usr:/host/usr:ro -v /traces:/traces --name sysdig sysdig/sysdig:0.26.4 bash -c "sysdig -z -C 2048 -qe /traces/npmjs.$(date + '%Y%m%d-%H%M%S').scap.gz container.image != sysdig/sysdig"
+  - docker run -v /var/run/docker.sock:/host/var/run/docker.sock -v /dev:/host/dev -v /proc:/host/proc:ro -v /boot:/host/boot:ro -v /lib/modules:/host/lib/modules:ro -v /usr:/host/usr:ro -v /traces:/traces --name sysdig sysdig/sysdig:0.26.4 bash -c "sysdig -z -C 2048 -qe /traces/npmjs.$(date +'%Y%m%d-%H%M%S').scap.gz container.image != sysdig/sysdig"
   - sleep 10
   - npm install express
   - npm install eslint
