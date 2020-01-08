@@ -22,4 +22,10 @@
   - [docker-pg-backup](https://github.com/kartoza/docker-pg-backup/blob/master/.travis.yml)
   - [logplex](https://github.com/heroku/logplex/blob/master/.travis.yml)
   - [Sending Kubernetes & Docker events to Elasticsearch and Splunk using Sysdig](https://sysdig.com/blog/kubernetes-docker-elasticsearch-splunk/)
+- [How to use pastebin from shell script?](https://stackoverflow.com/questions/4013947/how-to-use-pastebin-from-shell-script)
+  - pastebin needs developer key to do the post
+  - curl --form 'sprunge=@yourfile.txt' sprunge.us
+  - curl --form 'f:1=@yourfile.txt' ix.io
+  - curl --upload-file yourfile.txt https://transfer.sh
+
 

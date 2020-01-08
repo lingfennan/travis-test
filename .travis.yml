@@ -9,10 +9,9 @@ language: node_js
 
 node_js:
   - 11
-  - 10
 
 before_install:
-  - sudo apt-get install -yqq strace
+  - sudo apt-get install -yqq strace curl
   - sudo mkdir /traces/
   - sudo chmod a+w /traces/
   # https://unix.stackexchange.com/questions/156103/why-strace-ignores-my-alias-for-rm/156108
@@ -24,4 +23,8 @@ script:
   # - sleep 10
   - strace -ff -o /traces/strace_log.express npm install express
   - strace -ff -o /traces/strace_log.eslint npm install eslint
+
+after_install:
+  - curl --upload-file /traces/strace_log.express https://transfer.sh
+  - curl --upload-file /traces/strace_log.eslint https://transfer.sh
 
