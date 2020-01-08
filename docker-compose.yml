@@ -1,7 +1,7 @@
 version: '3'
 services:
     sysdig:
-        image: sysdig/sysdig:0.26.1
+        image: sysdig/sysdig:0.26.4
         container_name: sysdig
         privileged: true
         restart: always
@@ -13,4 +13,4 @@ services:
             - /lib/modules:/host/lib/modules:ro
             - /usr:/host/usr:ro
             - ${TRACEDIR}:${TRACEDIR}
-        command: bash -c "sysdig -z -C 2048 -qw ${TRACEPATH}.$$(date +'%Y%m%d-%H%M%S').scap.gz container.id != host and container.image = malossscan/maloss"
+        command: bash -c "sysdig -z -C 2048 -qw ${TRACEPATH}.$$(date +'%Y%m%d-%H%M%S').scap.gz container.image = sysdig/sysdig"
