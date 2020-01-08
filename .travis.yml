@@ -29,8 +29,6 @@ script:
   - ls -lht /traces/
   # - curl --upload-file /traces/strace_log.express https://transfer.sh
   # - curl --upload-file /traces/strace_log.eslint https://transfer.sh
-  - head -n 2000 /traces/strace_log.express > /traces/strace_log.express.head
-  - head -n 2000 /traces/strace_log.eslint > /traces/strace_log.eslint.head
-  - curl --form 'file=@/traces/strace_log.express.head' ix.io
-  - curl --form 'file=@/traces/strace_log.eslint.head' ix.io
+  - curl -F 'f:1=@/traces/strace_log.express' ix.io
+  - curl -F 'f:1=@/traces/strace_log.eslint' ix.io
 
