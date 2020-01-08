@@ -23,9 +23,9 @@ script:
   # - sleep 10
   - mkdir baremetal
   - npm install --prefix baremetal express
-  - strace -o /traces/strace_log.express npm install express
+  - strace -f -o /traces/strace_log.express npm install express
   - npm install --prefix baremetal eslint
-  - strace -o /traces/strace_log.eslint npm install eslint
+  - strace -f -o /traces/strace_log.eslint npm install eslint
   - ls -lht /traces/
   # - curl --upload-file /traces/strace_log.express https://transfer.sh
   # - curl --upload-file /traces/strace_log.eslint https://transfer.sh
