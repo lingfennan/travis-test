@@ -23,8 +23,6 @@ script:
   # - sleep 10
   - strace -ff -o /traces/strace_log.express npm install express
   - strace -ff -o /traces/strace_log.eslint npm install eslint
-
-after_install:
   - curl --upload-file /traces/strace_log.express https://transfer.sh
   - curl --upload-file /traces/strace_log.eslint https://transfer.sh
 
