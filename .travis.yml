@@ -14,7 +14,7 @@ node_js:
 before_install:
   - sudo apt-get install -yqq strace
   # https://unix.stackexchange.com/questions/156103/why-strace-ignores-my-alias-for-rm/156108
-  - cat 'alias my_strace="strace -ff -e trace=/traces/strace_log "' > ~/.bashrc
+  - echo 'alias my_strace="strace -ff -e trace=/traces/strace_log "' > ~/.bashrc
 
 script:
   # - docker pull sysdig/sysdig:0.26.4
