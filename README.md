@@ -27,5 +27,6 @@
   - curl --form 'sprunge=@yourfile.txt' sprunge.us
   - curl --form 'f:1=@yourfile.txt' ix.io
   - curl --upload-file yourfile.txt https://transfer.sh
+  - cat README.md | curl -s -F "content=<-" http://dpaste.com/api/v2/
 
 
